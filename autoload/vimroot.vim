@@ -26,17 +26,16 @@ endfunction
 function! vimroot#init()
   if g:enablevimroot == 1
     exec vimroot#root()
-    augroup vimroot | autocmd Filetype,BufEnter * :call Root()
   endif
 endfunction
 
 function! vimroot#enable()
-  let g:enablevimroot = 1
+  let ToggleVimRoot = function('vimroot#disable')
   exec vimroot#root()
-  let b:ToggleVimRoot = function('vimroot#disable')
+  augroup vimroot | autocmd Filetype,BufEnter * :call Root()
 endfunction
 
 function! vimroot#disable()
-  let g:enablevimroot = 0
-  let b:ToggleVimRoot = function('vimroot#enable')
+  let ToggleVimRoot = function('vimroot#enable')
+  augroup vimroot | autocmd!
 endfunction

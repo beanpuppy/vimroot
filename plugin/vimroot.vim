@@ -14,7 +14,7 @@ augroup vimrootinit
 augroup END
 
 command! Root :call vimroot#root()
-command! ToggleVimRoot :call b:ToggleVimRoot()
+command! ToggleVimRoot :call ToggleVimRoot()
 command! EnableVimRoot :call vimroot#enable()
 command! DisableVimRoot :call vimroot#disable()
 

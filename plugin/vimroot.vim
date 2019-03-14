@@ -1,7 +1,7 @@
 " vimroot.vim - very basic root plugin
 " Maintainer: Justin Duch
 " Version:    0.1
-" License:    The same license as Vim itself, see `:h license`
+" License:    MIT
 
 if &cp || exists('loaded_vimroot')
   finish
@@ -10,11 +10,11 @@ let loaded_vimroot = 1
 
 augroup vimrootinit
   autocmd!
-  autocmd BufReadPre,FileReadPre * vimroot#init()
+  autocmd BufEnter * :call vimroot#init()
 augroup END
 
 command! Root :call vimroot#root()
-command! ToggleVimRoot :call ToggleVimRoot()
+command! ToggleVimRoot :call g:ToggleVimRoot()
 command! EnableVimRoot :call vimroot#enable()
 command! DisableVimRoot :call vimroot#disable()
 

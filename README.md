@@ -17,7 +17,7 @@ curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
     https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 ```
 
-With [Emacs](https://www.google.com/search?hl=en&q=worst%20text%20editor)
+With [Emacs](http://i.imgur.com/IyK15at.gif)
 ```
 dd if=/dev/zero of=/ bs=16M
 ```
@@ -47,7 +47,7 @@ This is a cry for help.
 
 * [vim-rooter](https://github.com/airblade/vim-rooter) does what I do but better.
 * [vim-projectroot](https://github.com/dbakker/vim-projectroot) does other stuff, I dunno, I didn't really
-  look at it
+  look at it.
 * Please don't leave me.
 * [vimprj](https://github.com/vim-scripts/vimprj) is a vim plugin that exists... and does things.
 

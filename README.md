@@ -46,7 +46,7 @@ This is a cry for help.
 ## Similar Projects
 
 * [vim-rooter](https://github.com/airblade/vim-rooter) does what I do but better.
-* [vim-projectroot](https://github.com/dbakker/vim-projectroot) does other stuff, I dunno, I didn't really.
+* [vim-projectroot](https://github.com/dbakker/vim-projectroot) does other stuff, I dunno, I didn't really
   look at it
 * Please don't leave me.
 * [vimprj](https://github.com/vim-scripts/vimprj) is a vim plugin that exists... and does things.

@@ -25,6 +25,7 @@ endfunction
 
 function! vimroot#init()
   if g:enablevimroot == 1
+    exec vimroot#root()
     augroup vimroot | autocmd Filetype,BufEnter * :call Root()
   endif
 endfunction

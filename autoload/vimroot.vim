@@ -4,8 +4,8 @@ endif
 let autoloaded_vimroot = 1
 
 " Options {{{1
-if !exists('g:enablevimroot')
-  let g:enablevimroot = 1
+if !exists('g:vimroot_enable')
+  let g:vimroot_enable = 1
 endif
 
 function! vimroot#root()
@@ -20,7 +20,7 @@ function! vimroot#root()
 endfunction
 
 function! vimroot#init()
-  if g:enablevimroot == 1
+  if g:vimroot_enable == 1
     call vimroot#enable()
   else
     call vimroot#disable()

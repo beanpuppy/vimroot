@@ -13,9 +13,10 @@ function! vimroot#root()
   let path = expand('%:p:h')
   silent! execute 'lcd' path
   " lcd to git repo root
-  let root = systemlist('git rev-parse --show-toplevel')[0]
+  let root = systemlist('git rev-parse --show-toplevel')
   if !v:shell_error
-    execute 'lcd' root
+    call add(root, '.')
+    execute 'lcd' root[0]
   endif
 endfunction
 

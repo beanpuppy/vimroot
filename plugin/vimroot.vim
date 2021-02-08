@@ -17,4 +17,3 @@ command! Root :call vimroot#root()
 command! ToggleVimRoot :call g:ToggleVimRoot()
 command! EnableVimRoot :call vimroot#enable()
 command! DisableVimRoot :call vimroot#disable()
-
